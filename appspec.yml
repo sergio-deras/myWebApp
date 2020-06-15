@@ -5,5 +5,5 @@ files:
     destination: /home/ec2-user/mySuperWeb
 hooks:
   ApplicationStart:
-    - location: ./mySuperWeb/mySuperWeb.sh
+    - location: ./mySuperWeb.sh
       timeout: 300

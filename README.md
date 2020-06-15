@@ -1,8 +1,12 @@
+Next steps:
+* Fix images to build, use Linux or Ubuntu 
+* Use containers
+
 Create with
 - dotnet new webApp -o myWebApp --no-https
 
+Build process
 - dotnet build
-
 
 Publish (create a deployable app in Win 64)
 - dotnet publish -r win-x64
