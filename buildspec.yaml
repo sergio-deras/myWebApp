@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - dotnet build ./myWebApp.csproj 
+      - dotnet publish -c release -r linux-x64 -o ./build_output ./myWebApp.csproj
+      #- dotnet publish -c release -o ./build_output ./src/HelloWorldWebCore/HelloWorldWebCore.csproj
+artifacts:
+  files:
+    - build_output/*
+    - appspec.yml
+    - mySuperWeb.sh
