@@ -1,4 +1,5 @@
 
 # sudo killall -9 dotnet
 sudo killall -9 myWebApp
-nohup dotnet /home/ec2-user/build_output/myWebApp &
+sudo chmod +x ./home/ec2-user/build_output/mySuperWeb/myWebApp 
+./home/ec2-user/build_output/mySuperWeb/myWebApp &
