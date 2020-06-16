@@ -1,5 +1,10 @@
 Next steps:
+* Check if we can constuct correctly targeting linux_64 and not using the dotnet runtime 
 * Use containers
+
+
+Main issues:
+* The root path of the app, CSS files and wwwroot are not used if the app is not running here, there should be a config path
 
 
 Quick steps
@@ -9,11 +14,12 @@ Quick steps
 * Create a LConfig 
 * Create a AS with 
 
+#!/bin/bash
 sudo yum -y update
 sudo yum install -y ruby
 sudo yum install -y wget
-sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
-sudo yum install -y aspnetcore-runtime-3.1
+#sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
+#sudo yum install -y aspnetcore-runtime-3.1
 cd /home/ec2-user
 wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install
 chmod +x ./install
