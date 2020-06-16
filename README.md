@@ -1,6 +1,26 @@
 Next steps:
-* Fix images to build, use Linux or Ubuntu 
 * Use containers
+
+
+Quick steps
+* Create a CodePipeline
+* Configure the source
+* Configure a Build with CodeBuild
+* Create a LConfig 
+* Create a AS with 
+
+sudo yum -y update
+sudo yum install -y ruby
+sudo yum install -y wget
+cd /home/ec2-user
+wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install
+chmod +x ./install
+sudo ./install auto
+
+Two roles are needed
+* One for the EC2 to access S3 artifacts
+* One to allow CodeDeploy to use AS resources
+
 
 Create with
 - dotnet new webApp -o myWebApp --no-https
